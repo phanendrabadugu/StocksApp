@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Stock App</title>
+</head>
+<body>
+    <div>
+        <h2>
+            New Stock App
+        </h2>
+        <div>
+            <form id="stockForm">
+                <label for="StockName">Stock Name</label>
+                <input type="text" name="StockName" id="Stock_Name" placeholder="Enter Stock Name" >
+                <br/>
+                <label for="BuyingQuantity">Buying Quantity</label>
+                <input type="number" name="BuyingQuantity" id="Buying_Quantity" placeholder="Enter Buying Quantity" >
+                <br/>
+                <label for="BuyingPrice">Buying Price</label>
+                <input  type="number" name="BuyingPrice" id="Buying_Price" placeholder="Enter Buying Price" >
+                <br/>
+                <label for="SellingQuantity">Selling Quantity</label>
+                <input type="number" name="SellingQuantity" id="Selling_Quantity" placeholder="Enter Selling Quantity" >
+                <br/>
+                <label for="SellingPrice">Selling Price</label>
+                <input type="number" name="SellingPrice" id="Selling_Price" placeholder="Enter Selling Price" >
+                 <br/>
+                <button id="submit" onclick="addData()"  >Add Data</button>
+                <br/>
+            </form>
+            
+            <table>
+                <thead>
+                    <th>SN</th>
+                    <th>BQ</th>
+                    <th>BP</th>
+                    <th>BTA</th>
+                    <th>SQ</th>
+                    <th>SP</th>
+                    <th>ST</th>
+                    <th>PL</th>
+                    <th>Pcent</th>
+                   
+                  </thead>
+                <tbody id="table1">
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
